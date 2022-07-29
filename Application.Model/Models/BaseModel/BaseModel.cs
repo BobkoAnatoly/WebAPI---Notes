@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Application.Model.Models.BaseModel
 {
-    internal class BaseModel
+    public abstract class BaseModel
     {
+        public int Id { get; set; }
     }
 }
