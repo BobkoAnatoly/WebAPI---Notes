@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace Application.Controllers
 {
     [Route("api/[controller]")]
+    [ApiController]
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
@@ -15,7 +16,7 @@ namespace Application.Controllers
             _userService = userService;
         }
         [HttpPost("register")]
-        public ActionResult<UserDto> Register([FromBody] RegisterDto userDto)
+        public ActionResult<UserDto> Register( RegisterDto userDto)
         {
             if (_userService.UserExists(userDto.Login))
                 return BadRequest("UserName Is Already Taken");
@@ -32,7 +33,7 @@ namespace Application.Controllers
                 return Unauthorized("Invalid Login or Password");
             return Ok(user);
         }
-        [HttpGet, Authorize]
+        [HttpGet("Get"),Authorize]
         public ActionResult<IEnumerable<string>> Get()
         {
             return new string[] { "value1", "value2" };

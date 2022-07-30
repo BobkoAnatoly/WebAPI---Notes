@@ -66,3 +66,11 @@ C:\Users\User\source\repos\WebAPI.Notes\Application\bin\Debug\net6.0\Humanizer.d
 C:\Users\User\source\repos\WebAPI.Notes\Application\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\User\source\repos\WebAPI.Notes\Application\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\User\source\repos\WebAPI.Notes\Application\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\User\source\repos\WebAPI.Notes\Application\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\User\source\repos\WebAPI.Notes\Application\bin\Debug\net6.0\Scrutor.dll
+C:\Users\User\source\repos\WebAPI.Notes\Application\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\User\source\repos\WebAPI.Notes\Application\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+C:\Users\User\source\repos\WebAPI.Notes\Application\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\User\source\repos\WebAPI.Notes\Application\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\User\source\repos\WebAPI.Notes\Application\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\User\source\repos\WebAPI.Notes\Application\bin\Debug\net6.0\Swashbuckle.Core.dll
