@@ -11,5 +11,7 @@ namespace Application.Model.Models
         public string Login { get; set; }
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
+        public int RefreshTokenId { get; set; }
+        public RefreshToken RefreshToken { get; set; }
     }
 }

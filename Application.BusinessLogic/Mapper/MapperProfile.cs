@@ -13,10 +13,8 @@ namespace Application.BusinessLogic.Mapper
     {
         public MapperProfile()
         {
-            CreateMap<User, RegisterDto>();
-            CreateMap<RegisterDto, User>();
-            CreateMap<User, UserDto>();
-            CreateMap<UserDto, User>();
+            CreateMap<User, RegisterDto>().ReverseMap();
+            CreateMap<User, UserDto>().ReverseMap();
         }
     }
 }

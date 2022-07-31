@@ -11,6 +11,7 @@ namespace Application.Model.Database
             Database.EnsureCreated();
         }
         public DbSet<User> Users { get; set; } = null!;
+        public DbSet<RefreshToken> RefreshTokens { get; set; } = null!;
 
     }
 }

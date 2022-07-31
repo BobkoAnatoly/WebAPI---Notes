@@ -8,8 +8,6 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.OpenApi.Models;
-using Swashbuckle.AspNetCore.Filters;
-using Swashbuckle.Swagger;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,6 +32,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 });
 builder.Services.AddTransient<ITokenService, TokenService>();
 builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddTransient<IAuthService, AuthService>();
 builder.Services.AddSingleton(mapper);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
