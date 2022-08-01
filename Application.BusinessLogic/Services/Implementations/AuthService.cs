@@ -35,7 +35,7 @@ namespace Application.BusinessLogic.Services.Implementations
             var tokenHandler = new JwtSecurityTokenHandler();
             var encodedJwt = tokenHandler.WriteToken(token);
             var refreshToken = AddRefreshToken(user);
-
+            user.RefreshToken = refreshToken;
             var mappedUser = _mapper.Map<User, UserDto>(user);
             return new TokenDto
             {
@@ -99,7 +99,7 @@ namespace Application.BusinessLogic.Services.Implementations
             var user = _context.Users.FirstOrDefault(x => x.Login == model.Login);
             if (user == null) throw new Exception("Пользователь не найден");
             _context.RefreshTokens.Remove(refreshToken);
-
+            _context.SaveChanges();
             return GetToken(user);
         }
     }

@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Application.Migrations
 {
     [DbContext(typeof(ApplicationDatabaseContext))]
-    [Migration("20220731160758_RefreshTokenFix")]
+    [Migration("20220801072109_RefreshTokenFix")]
     partial class RefreshTokenFix
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

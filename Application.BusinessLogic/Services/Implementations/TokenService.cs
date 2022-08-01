@@ -30,7 +30,8 @@ namespace Application.BusinessLogic.Services.Implementations
                 audience:"WebApiUser",
                 claims: claims,
                 expires: DateTime.UtcNow.AddMinutes(10),
-                signingCredentials: creds
+                signingCredentials: creds,
+                notBefore: DateTime.UtcNow
                 );
 
             return Jwt;
